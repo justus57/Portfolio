@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Portfolio/Resume Theme for Developers</title>
+    <title>Portfolio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                                 
-                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">Launch - The perfect Bootstrap template for SaaS products</a></h3>
+                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">Timesheets Mobile App</a></h3>
                                     
                                 <div class="desc text-start">                                    
                                     <p>Timesheets Mobile App</p>
@@ -152,20 +152,16 @@
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 <section class="github section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using justus57 <a href="https://github.com/justus57/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                        
-                        <div id="github-graph" class="github-graph">
-
-                        </div><!--//github-graph-->
-
-                        <p>You can also embed your GitHub activities using justuskasyoki <a href="https://github.com/justus57/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
-                    </div><!--//secton-inner-->
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/github.png" alt="project name" />
+                    
+                    <script>
+                    GitHubCalendar(".calendar", "justus57");
+                    // or enable responsive functionality:
+                    GitHubCalendar(".calendar", "justus57", { responsive: true });
+                    </script>
+                    <script>
+                        document.getElementById("year").innerHTML = new Date().getFullYear();
+                    </script>
                 </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
@@ -243,7 +239,7 @@
                                 <blockquote class="quote">                                  
                                     <p><i class="fas fa-quote-left"></i>Knowledgeable, creative and motivated IT professional with a passion for science and technology. Skilled in leading programming tools, mobile app development</p>
                                 </blockquote>                
-                                <p class="source"><span class="name">Phanuel Mutuma</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                                <p class="source"><span class="name">Phanuel Mutuma</span><br /><span class="title">IT and Financial Manager</span></p>                                                             
                             </div><!--//item-->
                             
                             <p><a class="more-link" href="https://www.linkedin.com/in/justuskasyoki-swdvp/"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
@@ -285,11 +281,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
-          
-          
-                   
-              
+        
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
