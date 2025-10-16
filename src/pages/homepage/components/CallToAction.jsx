@@ -146,9 +146,9 @@ const CallToAction = () => {
               Start a Conversation
             </button>
             <a 
-              href="/resume.pdf" 
+              href="/Joseph-Justus-Resume.pdf" 
               className="btn btn-outline text-lg px-8 py-4 text-white border-white/20 hover:bg-white/10"
-              download
+              download="Joseph-Justus-Resume.pdf"
             >
               Download Resume
             </a>

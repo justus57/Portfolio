@@ -72,9 +72,9 @@ const Header = () => {
               Schedule Call
             </button>
             <a 
-              href="/resume.pdf" 
+              href="/Joseph-Justus-Resume.pdf" 
               className="btn btn-primary"
-              download
+              download="Joseph-Justus-Resume.pdf"
             >
               Download CV
             </a>
@@ -119,9 +119,9 @@ const Header = () => {
                   Schedule Call
                 </button>
                 <a 
-                  href="/resume.pdf" 
+                  href="/Joseph-Justus-Resume.pdf" 
                   className="btn btn-primary w-full"
-                  download
+                  download="Joseph-Justus-Resume.pdf"
                   onClick={toggleMenu}
                 >
                   Download CV

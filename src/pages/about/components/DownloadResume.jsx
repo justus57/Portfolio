@@ -13,15 +13,17 @@ const DownloadResume = () => {
       description: 'Professional format for applications',
       icon: FileText,
       size: '245 KB',
-      features: ['ATS Optimized', 'Print Ready', 'Universal Format']
+      features: ['ATS Optimized', 'Print Ready', 'Universal Format'],
+      downloadUrl: '/Joseph-Justus-Resume.pdf'
     },
     {
       type: 'detailed',
       label: 'Detailed PDF',
       description: 'Comprehensive portfolio document',
       icon: FileText,
-      size: '1.2 MB',
-      features: ['Project Gallery', 'Technical Deep Dive', 'References']
+      size: '245 KB',
+      features: ['Project Gallery', 'Technical Deep Dive', 'References'],
+      downloadUrl: '/Joseph-Justus-Resume.pdf'
     }
   ];
 
@@ -35,19 +37,31 @@ const DownloadResume = () => {
   const handleDownload = async (format) => {
     setIsDownloading(true);
     
-    // Simulate download process
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // In a real application, you would trigger the actual download here
-    // For demo purposes, we'll just show a success message
-    console.log(`Downloading ${format} resume...`);
-    
-    setIsDownloading(false);
+    try {
+      // Find the selected format configuration
+      const selectedResume = resumeFormats.find(resume => resume.type === format);
+      
+      if (selectedResume && selectedResume.downloadUrl) {
+        // Create a temporary link element to trigger download
+        const link = document.createElement('a');
+        link.href = selectedResume.downloadUrl;
+        link.download = 'Joseph-Justus-Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        console.log(`Downloaded ${format} resume successfully`);
+      }
+    } catch (error) {
+      console.error('Download failed:', error);
+    } finally {
+      setIsDownloading(false);
+    }
   };
 
   const handlePreview = () => {
-    // In a real application, this would open a preview modal or new window
-    console.log('Opening resume preview...');
+    // Open the resume PDF in a new tab for preview
+    window.open('/Joseph-Justus-Resume.pdf', '_blank');
   };
 
   const handleContactRequest = () => {
