@@ -2,6 +2,19 @@
 
 A modern, responsive React portfolio built with Vite, Tailwind CSS, and Framer Motion. Showcasing expertise in Payment Systems Development, FinTech, .NET Framework Technologies, and Financial Technologies.
 
+## 🚀 Public Deployment Options
+
+### Deploy to Netlify (Recommended - Always Public)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/justus57/Portfolio)
+
+### Deploy to Vercel (Public Access)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjustus57%2FPortfolio&project-name=joseph-justus-portfolio)
+
+### Deploy to Render (Free Hosting)
+- Visit [render.com](https://render.com)
+- Connect your GitHub repository
+- Auto-deploy with zero configuration
+
 ## 🚀 Quick Start
 
 ### Prerequisites
